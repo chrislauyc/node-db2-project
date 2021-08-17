@@ -8,7 +8,7 @@ const getById = (id) => {
 }
 
 const create = (car) => {
-  return db("cars").insert(car); //counts
+  return db("cars").insert(car); //inserted id
 }
 const getByVin=(vin)=>{
   return db("cars").where({vin}).first();
